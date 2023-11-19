@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         //Removes the first element of an array, and returns that element
+            var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];
+                foods.shift();
+                  console.log(foods);
+
+         //	Sorts the elements of an array           
+             var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];  
+                foods.sort();
+                    console.log(foods);
+
+         //Reverses the order of the elements in an array
+             var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];
+                foods.reverse();
+                     console.log(foods);
+
+         // adds new items to the end of an array
+              var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];
+                foods.push('ghorme');
+                     console.log(foods);
+
+         //Removes the last element of an array, and returns that element
+             var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];
+                foods.pop();
+                      console.log(foods);
+
+         //Selects a part of an array, and returns the new array
+             var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];            
+                 var bowl = foods.slice(0 , 2);
+                   console.log(bowl);
+
+         //Adds new elements to the beginning of an array, and returns the new length
+             var foods = ['pizza' , 'burger' , 'pasta' , 'gheyme'];
+                 foods.unshift('ghorme' , 'lazania');
+                    console.log(foods);
+
+         //Creates a new array with every element in an array that pass a test
+             var ages = [23 , 45 , 24 , 63 , 12];
+                     var result = ages.filter(check);
+                        function check(age){
+                        
+                            return age >= 18;
+                        }
+                            console.log(result);
+
+          //Concatenates sub-array elements
+               var myArr = [[1,2],[3,4],[5,6]];
+                    var newArr = myArr.flat();
+                        console.log(newArr);
+                        
+           //Searches a string for a value, or regular expression, and returns the index (position) of the match
+                 var text ="Hello My Name Is Amir"
+                        var position = text.search("Is");
+                            console.log(position);
+
+                
+
+
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
