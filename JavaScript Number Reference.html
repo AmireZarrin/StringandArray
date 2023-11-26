@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Returns the function that created JavaScript's Number prototype
+             var num = 123;
+                var txt = num.constructor;
+                    console.log(txt);
+        //Checks whether a value is a finite number
+             var result = Number.isFinite(123);
+                  console.log(result);
+        //Checks whether a value is an integer
+             var result1 = Number.isInteger(123);     
+                 console.log(result); 
+        //Checks whether a value is Number.NaN
+             var result2 =  Number.isNaN(0 / 0);        
+                 console.log(result); 
+        //Returns the primitive value of a number
+             var num = 15;
+                var n = num.valueOf();
+                    console.log(n);
+        //Converts a number to a string   
+             var num = 15;
+                 var text = num.toString();
+                    console.log(text);
+        //Formats a number to x length
+             var num = 16.668526;
+                    console.log(num.toPrecision(2));
+        //Converts a number into a string, based on the locale settings
+             var num = 1000000;
+                    var text1 = num.toLocaleString();     
+                         console.log(text1);    
+        //Formats a number with x numbers of digits after the decimal point
+              var num = 7.5278;    
+                console.log(num.toFixed());  
+        //Converts a number into an exponential notation
+              var num = 7.5278;
+                console.log(num.toExponential());
+    </script>
+       
+</body>
+</html>
