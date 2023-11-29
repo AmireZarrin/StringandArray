@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateSquarArea(sideLength)
+        {
+            return sideLength * sideLength;
+        }
+
+        var sideLength = prompt('please enter the side length');
+
+
+        var squareArea = calculateSquarArea(sideLength);
+        
+        console.log(squareArea);
+
+        '******************************************************************************'
+        function calculateSquarPerimeter(sideLength)
+        {
+            return 4 * sideLength;
+        }
+
+        var sideLength = prompt('please enter the side length');
+
+
+        var squarPerimeter = calculateSquarPerimeter(sideLength);
+        
+        console.log(squarPerimeter);
+
+        '******************************************************************************'
+        function calculatRectangleArea(length , width)
+        {
+            return length * width;
+        }
+
+        var length = prompt('please enter the length');
+        var width = prompt('please enter the width');
+
+        var rectangleArea = calculatRectangleArea(length , width);
+        
+        console.log(rectangleArea);    
+        '******************************************************************************'
+        function calculatRectanglePerimeter(length , width)
+        {
+            return 2 * (length + width);
+        }
+
+        var length =prompt('please enter the length');
+        var width = prompt('please enter the width');
+
+        var rectanglePerimeter = calculatRectanglePerimeter(length , width);
+        
+        console.log(rectanglePerimeter);    
+
+        '******************************************************************************'
+        function calculateBmi (weight , height)
+        {
+            var cm = height /100;
+
+            return weight / (cm * cm);
+        }
+
+        var weight = prompt('لطفا وزن خود را به کیلوگرم وارد نمایید');
+        var height = prompt('لطفا قد خود را به سانتی متر وارد کنید');
+
+        var bmi = calculateBmi(weight, height);
+
+        console.log(bmi);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
